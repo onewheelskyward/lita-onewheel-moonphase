@@ -11,8 +11,8 @@ module Lita
       def moon(response)
         location = response.matches[0][0]
 
-        unless location
-          location = 'Portland, OR'
+        if location.empty?
+          location = '45.5230622,-122.6764816'
         end
 
         Lita.logger.debug "Getting Moon data for #{location}"
