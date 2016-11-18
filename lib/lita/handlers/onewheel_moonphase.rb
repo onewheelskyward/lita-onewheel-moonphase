@@ -16,7 +16,7 @@ module Lita
         end
 
         Lita.logger.debug "Getting Moon data for #{location}"
-        moon = JSON.parse(RestClient.get("https://j8jqi56gye.execute-api.us-west-2.amazonaws.com/prod/moon?loc=location"))
+        moon = JSON.parse(RestClient.get("https://j8jqi56gye.execute-api.us-west-2.amazonaws.com/prod/moon?loc=#{location}"))
 
         reply = "Moon phase #{moon['moondata']['fracillum']}, #{moon['moondata']['curphase']}."
         response.reply reply
