@@ -16,11 +16,12 @@ module Lita
         end
 
         Lita.logger.debug "Getting Moon data for #{location}"
-        uri = "https://j8jqi56gye.execute-api.us-west-2.amazonaws.com/prod/moon?loc=#{location}"
+        uri = "https://j8jqi56gye.execute-api.us-west-2.amazonaws.com/prod/moon?loc=#{URI.encode location}"
         Lita.logger.debug uri
         moon = JSON.parse(RestClient.get(uri))
 
         reply = "Moon phase #{moon['moondata']['fracillum']}, #{moon['moondata']['curphase']}."
+        Lita.logger.debug "Replying with #{reply}"
         response.reply reply
       end
 
