@@ -1,0 +1,25 @@
+{
+  "year": 2017,
+  "month": 8,
+  "day": 27,
+  "dayOfWeek": "Sunday",
+  "lng": -122.676552,
+  "lat": 45.523316,
+  "location": "45.5230622,-122.6764816",
+  "address": "11 NW 6th Ave, Portland, OR 97209, USA",
+  "tz": -8,
+  "sundata": {
+    "civilRise": "2017-8-27T04:55:00-8",
+    "rise": "2017-8-27T05:26:00-8",
+    "transit": "2017-8-27T12:12:00-8",
+    "set": "2017-8-27T18:57:00-8",
+    "civilSet": "2017-8-27T19:28:00-8"
+  },
+  "moondata": {
+    "fracillum": "13%",
+    "curphase": "Waxing Crescent",
+    "rise": "2017-8-27T11:45:00-8",
+    "transit": "2017-8-27T17:03:00-8",
+    "set": "2017-8-27T22:16:00-8"
+  }
+}
