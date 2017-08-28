@@ -19,14 +19,14 @@ module Lita
         set_time = Time.parse moon['moondata']['set']
 
         emoonjis = {
-            'New Moon'        => '🌚',
-            'Waxing Crescent' => '🌒',
-            'First Quarter'   => '🌓',
-            'Waxing Gibbous'  => '🌔',
-            'Full Moon'       => '🌕',
-            'Waning Gibbous'  => '🌖',
-            'Last Quarter'    => '🌗',
-            'Waning Crescent' => '🌘'
+          'New Moon'        => '🌚',
+          'Waxing Crescent' => '🌒',
+          'First Quarter'   => '🌓',
+          'Waxing Gibbous'  => '🌔',
+          'Full Moon'       => '🌕',
+          'Waning Gibbous'  => '🌖',
+          'Last Quarter'    => '🌗',
+          'Waning Crescent' => '🌘'
         }
 
         reply = "#{emoonjis[moon['moondata']['curphase']]} Moon phase #{moon['moondata']['fracillum']}, #{moon['moondata']['curphase']}.  "
