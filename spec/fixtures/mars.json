@@ -1,0 +1,15 @@
+{
+  "status": 200,
+  "id": 198,
+  "sol": 2108,
+  "season": "Month 7",
+  "min_temp": -65,
+  "max_temp": -24,
+  "atmo_opacity": "Sunny",
+  "sunrise": "05:19",
+  "sunset": "17:27",
+  "min_gts_temp": -58,
+  "max_gts_temp": -15,
+  "unitOfMeasure": "Celsius",
+  "TZ_Data": "America/Port_of_Spain"
+}

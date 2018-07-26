@@ -44,4 +44,10 @@ describe Lita::Handlers::OnewheelMoonphase, lita_handler: true do
     send_command 'moon'
     expect(replies.last).to eq('🌔 Moon phase 75%, Waxing Gibbous.  Rise: 11:45  Set: 22:16')
   end
+
+  it 'marses' do
+    load_mock('mars')
+    send_command 'mars'
+    expect(replies.last).to eq("Sol 2108, Month 7, A Sunny day with a min temp of -65 and a high of -24 Celsius.  Sunrise is at 05:19 and sunset occurs at 17:27.")
+  end
 end
