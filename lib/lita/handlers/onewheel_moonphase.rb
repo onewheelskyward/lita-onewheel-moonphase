@@ -16,23 +16,23 @@ module Lita
       # 🌑🌛
 
       def mars(response)
-        api_resp = RestClient.get 'https://api.maas2.jiinxt.com/'
+        api_resp = RestClient.get 'https://api.maas2.apollorion.com'
         data = JSON.parse(api_resp)
-        {
-          "status": 200,
-          "id": 198,
-          "sol": 2108,
-          "season": "Month 7",
-          "min_temp": -65,
-          "max_temp": -24,
-          "atmo_opacity": "Sunny",
-          "sunrise": "05:19",
-          "sunset": "17:27",
-          "min_gts_temp": -58,
-          "max_gts_temp": -15,
-          "unitOfMeasure": "Celsius",
-          "TZ_Data": "America/Port_of_Spain"
-        }
+        # {
+        #   "status": 200,
+        #   "id": 198,
+        #   "sol": 2108,
+        #   "season": "Month 7",
+        #   "min_temp": -65,
+        #   "max_temp": -24,
+        #   "atmo_opacity": "Sunny",
+        #   "sunrise": "05:19",
+        #   "sunset": "17:27",
+        #   "min_gts_temp": -58,
+        #   "max_gts_temp": -15,
+        #   "unitOfMeasure": "Celsius",
+        #   "TZ_Data": "America/Port_of_Spain"
+        # }
 
         resp = "Sol #{data['sol']}, #{data['season']}, A #{data['atmo_opacity']} day with a min temp of #{data['min_temp']} and a high of #{data['max_temp']} #{data['unitOfMeasure']}.  Sunrise is at #{data['sunrise']} and sunset occurs at #{data['sunset']}."
         response.reply resp

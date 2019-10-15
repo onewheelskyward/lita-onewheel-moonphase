@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'lita-onewheel-moonphase'
-  spec.version       = '2.2.0'
+  spec.version       = '2.2.1'
   spec.authors       = ['Andrew Kreps']
   spec.email         = ['andrew.kreps@gmail.com']
   spec.description   = %q{Lita interface to a lambda representing Moon phase data.  With a dash of Mars.}
