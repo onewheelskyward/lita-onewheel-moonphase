@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'lita-onewheel-moonphase'
-  spec.version       = '2.2.1'
+  spec.version       = '2.2.2'
   spec.authors       = ['Andrew Kreps']
   spec.email         = ['andrew.kreps@gmail.com']
   spec.description   = %q{Lita interface to a lambda representing Moon phase data.  With a dash of Mars.}
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 2'
 
   # spec.add_development_dependency 'pry-byebug', '~> 3.1'
-  spec.add_development_dependency 'rake', '~> 11'
+  spec.add_development_dependency 'rake', '~> 13'
   spec.add_development_dependency 'rack-test', '~> 0'
   spec.add_development_dependency 'rspec', '~> 3'
   spec.add_development_dependency 'simplecov', '~> 0'
